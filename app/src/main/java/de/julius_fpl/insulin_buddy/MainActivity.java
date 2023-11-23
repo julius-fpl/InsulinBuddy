@@ -3,7 +3,6 @@ package de.julius_fpl.insulin_buddy;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -37,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
 
-    public void Test(View view) {
-        Toast.makeText(this, "Gedrückt", Toast.LENGTH_SHORT).show();
+    public void openMealCalculator(View view) {
         Intent intent = new Intent(this, MealCalculator.class);
         startActivity(intent);
     }
